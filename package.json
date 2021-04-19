@@ -1,0 +1,21 @@
+{
+  "name": "epam-cloud-devops-js",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "preinstall": "cd ./client && npm i",
+    "preserve": "cd ./client && npm run build",
+    "serve": "node src/main.js",
+    "dev": "nodemon src/main.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
+    "express": "~4.16.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7",
+    "prettier": "^2.2.1"
+  }
+}

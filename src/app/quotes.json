@@ -1,0 +1,20 @@
+[
+    {
+        "author": "Illia",
+        "text": "It is what it is",
+        "source": "no source",
+        "tags": "dummy",
+        "id": "1",
+        "isDeleted": false,
+        "createdAt": "2021-04-19T09:24:47.851Z"
+    },
+    {
+        "author": "Illia",
+        "text": "Gold is golden!",
+        "source": "no source",
+        "tags": "gold",
+        "id": "2",
+        "isDeleted": false,
+        "createdAt": "2021-04-19T09:25:08.468Z"
+    }
+]
