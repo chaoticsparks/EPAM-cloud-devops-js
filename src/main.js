@@ -7,7 +7,9 @@
 require('dotenv').config();
 const app = require('./app/app');
 const debug = require('debug')('epam-cloud-devops-js:server');
-const http = require('http');
+const https = require('https');
+const fs = require('fs');
+const path = require('path');
 
 /**
  * Get port from environment and store in Express.
@@ -20,7 +22,10 @@ app.set('port', port);
  * Create HTTP server.
  */
 
-const server = http.createServer(app);
+const server = https.createServer({
+    key: fs.readFileSync(path.join(__dirname, '..', 'cert', 'privkey.pem')), // путь к ключу
+    cert: fs.readFileSync(path.join(__dirname, '..', 'cert', 'cert.crt')) // путь к сертификату
+},app);
 
 /**
  * Listen on provided port, on all network interfaces.
