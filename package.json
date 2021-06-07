@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "preinstall": "cd ./client && npm i",
-    "preserve": "cd ./client && npm run build",
+    "preserve": "cd ./client && npm run build -- --prod",
     "serve": "node src/main.js",
     "dev": "nodemon src/main.js"
   },
